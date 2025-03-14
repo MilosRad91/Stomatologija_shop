@@ -224,27 +224,11 @@ def dodaj_u_tabelu_korpa_proizvodi():
     	"""
 		params_update = (kolicina_u_korpi, korpa_id, proizvod_id)
 		cursor.execute(upit_update, params_update)
-
-		# upit_update_kol_proizvoda = '''
-		# 	UPDATE proizvodi
-		# 	SET kolicina = kolicina - %s
-		# 	WHERE idProizvodi = %s
-		# '''
-		# par = (kolicina_u_korpi,proizvod_id)
-		# cursor.execute(upit_update_kol_proizvoda,par)
+		
 	else:
-    # Ako proizvod ne postoji, ubaci novi red
 		upit_insert = "INSERT INTO korpa_proizvodi (korpa_id, proizvod_id, kolicina_u_korpi, cena_proizvoda, prodavac_id) VALUES (%s, %s, %s, %s, %s)"
 		params_insert = (korpa_id, proizvod_id, kolicina_u_korpi, cena, prodavac_id)
 		cursor.execute(upit_insert, params_insert)
-
-		# upit_update_kol_proizvoda = '''
-		# 	UPDATE proizvodi
-		# 	SET kolicina = kolicina - %s
-		# 	WHERE idProizvodi = %s
-		# '''
-		# par = (kolicina_u_korpi,proizvod_id)
-		# cursor.execute(upit_update_kol_proizvoda,par)
 
 	mydb.commit()
 
