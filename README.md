@@ -1,6 +1,6 @@
 Projekat je izrađen u kombinaciji:
 
-Backend deo: Python(Flask),
-Frontend deo: JavaScript(Vue.js)
-Baza: phpmyadmin/localhost
+1. Backend deo: Python(Flask);
+2. Frontend deo: JavaScript(Vue.js);
+3. Baza: phpmyadmin/localhost.
 
