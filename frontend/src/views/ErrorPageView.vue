@@ -9,7 +9,7 @@
         ><button class="btn btn-danger btn-lg ms-5">Nazad</button></router-link
       >
     </p>
-    <!-- <img src="../images/stop.png" alt=""> -->
+   
   </div>
   <div v-else-if="flag">
     <h1>Morate se ulogovati da biste pristupili stranici</h1>
@@ -50,11 +50,11 @@ h1 {
   margin-bottom: 100px;
 }
 .slika {
-  background-image: url("../images/stop.png"); /* Putanja do tvoje slike */
-  background-size: cover; /* Slika će pokriti ceo ekran */
-  background-position: center; /* Centriraj sliku */
-  background-attachment: fixed; /* Slika se neće pomerati dok skroluješ */
-  height: 100vh; /* Visina je 100% visine ekrana */
+  background-image: url("../images/stop.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  height: 100vh; 
   margin: 0;
 }
 </style>
