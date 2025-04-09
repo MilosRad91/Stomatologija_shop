@@ -2,7 +2,6 @@
 
     <div class="container my-5">
       <div class="row">
-        <!-- Profilna slika i osnovne informacije -->
         <div class="col-md-4">
           <div class="profile-header text-center">
             <p>Korisničko ime</p>
@@ -10,7 +9,6 @@
           </div>
         </div>
   
-        <!-- Profilni podaci -->
         <div class="col-md-8">
           <div class="profile-card">
             <h3>Ostali podaci</h3>
