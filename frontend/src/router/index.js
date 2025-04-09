@@ -20,10 +20,10 @@ const router = createRouter({
           next({ name: 'error_page' });
         }
         if (korisnik == null) {
-          next(); // Dozvoli pristup
+          next();
         } 
         else {
-          next({ name: 'error_page' }); // Preusmeri na drugu stranicu, ako nije kupac
+          next({ name: 'error_page' });
         }
       }
     },
@@ -53,10 +53,10 @@ const router = createRouter({
           next({ name: 'error_page' });
         }
         if (korisnik.vrsta_korisnika === 'kupac') {
-          next(); // Dozvoli pristup
+          next(); 
         } 
         else {
-          next({ name: 'error_page' }); // Preusmeri na drugu stranicu, ako nije kupac
+          next({ name: 'error_page' }); 
         }
       }
     },
@@ -71,10 +71,10 @@ const router = createRouter({
           next({ name: 'error_page' });
         }
         if (korisnik.vrsta_korisnika === 'prodavac') {
-          next(); // Dozvoli pristup
+          next(); 
         } 
         else {
-          next({ name: 'error_page' }); // Preusmeri na drugu stranicu, ako nije kupac
+          next({ name: 'error_page' }); 
         }
       }
     },
@@ -89,10 +89,10 @@ const router = createRouter({
           next({ name: 'error_page' });
         }
         if (korisnik.vrsta_korisnika === 'admin') {
-          next(); // Dozvoli pristup
+          next();
         } 
         else {
-          next({ name: 'error_page' }); // Preusmeri na drugu stranicu, ako nije kupac
+          next({ name: 'error_page' }); 
         }
       }
     },
