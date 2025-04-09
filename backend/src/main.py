@@ -73,7 +73,6 @@ def registracija_korisnik():
 	cursor.execute(upit,params)
 	mydb.commit()
 
-	# Vraćamo odgovor na uspešno primljene podatke
 	return jsonify({
 		"message": "Podaci su uspešno primljeni!"
 	}), 200
@@ -209,14 +208,12 @@ def dodaj_u_tabelu_korpa_proizvodi():
 	mydb = get_db_connection()
 	cursor = mydb.cursor(dictionary=True)
 
-	# Proverite da li proizvod već postoji u tabeli korpa_proizvodi
 	upit_provera = "SELECT * FROM korpa_proizvodi WHERE korpa_id = %s AND proizvod_id = %s"
 	params_provera = (korpa_id, proizvod_id)
 	cursor.execute(upit_provera, params_provera)
 	proizvod = cursor.fetchone()
 
 	if proizvod:
-		# Ako proizvod već postoji, ažuriraj količinu i cenu
 		upit_update = """
         	UPDATE korpa_proizvodi 
         	SET kolicina_u_korpi = kolicina_u_korpi + %s
