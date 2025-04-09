@@ -131,7 +131,7 @@
     </div>
   </div>
 
-  <!-- Product Section -->
+  
   <section id="proizvodi" class="py-5">
     <div class="container">
       <h1 class="text-center mb-5">Proizvodi u ponudi</h1>
@@ -303,10 +303,10 @@ export default {
           this.odabrani_proizvodi = response.data.odabrani_proizvodi;
         }
       } catch (error) {
-        // U slučaju greške u komunikaciji, postavi flag na true
+        
         console.error("Greška prilikom dohvatanja podataka: ", error);
-        this.flag = true; // Greška prilikom dohvatanja
-        // this.odabrani_proizvodi = []; // Možda želiš da očistiš prethodno učitane proizvode
+        this.flag = true; 
+        
       }
     },
 
@@ -390,10 +390,8 @@ export default {
 
 <style scoped>
 .gradient-custom-2 {
-  /* fallback for old browsers */
   background: #fccb90;
 
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(
     to right,
     #ee7724,
@@ -427,7 +425,6 @@ export default {
 }
 
 .card:hover {
-  /* transform: translateY(-20px); */
   box-shadow: 0 4px 20px red;
 }
 
@@ -519,10 +516,10 @@ h5 {
 }
 
 .modal-footer .btn {
-  margin: 0 5px; /* Opcionalno, dodajte razmak između dugmadi */
+  margin: 0 5px; 
 }
 
 .modal-footer .btn-danger {
-  margin-right: auto; /* Ovo pomera dugme "Ponisti korpu" skroz desno */
+  margin-right: auto; 
 }
 </style>
