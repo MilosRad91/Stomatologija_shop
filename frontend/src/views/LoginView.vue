@@ -155,10 +155,10 @@ export default {
 
 <style scoped>
 .gradient-custom-2 {
-  /* fallback for old browsers */
+  
   background: #fccb90;
 
-  /* Chrome 10-25, Safari 5.1-6 */
+  
   background: -webkit-linear-gradient(
     to right,
     #ee7724,
